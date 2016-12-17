@@ -1,0 +1,26 @@
+<!-- <head>
+	<%= include_gon(:int => true) %>
+</head> -->
+<center><pre id="display"></pre></center>
+<center><%=first_name%><br>
+<%=last_name%><br>
+<%=email%></center> 
+<form method="post" action="details">
+	    <br>
+	    <center><button  onclick="submitExposure()" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Submit Exposure</button></center>
+	
+	  <center> <a href="/"  class="btn btn-primary btn-lg" role="button" aria-disabled="true">Add Another Entry</a></center>
+     
+<section id="todoapp" style="padding-top:0%;padding-bottom:0%">
+        <div id="audit_info">
+            <input hidden id="first_name"  value="<%=first_name%>" autofocus>
+            <input hidden id="last_name" value="<%=last_name%>"]%>  
+            <input hidden id="email" value="<%=email%>">
+            </div>
+        </section>
+
+
+
+
+<script src="//cdn.jsdelivr.net/pouchdb/latest/pouchdb.min.js"></script>
+ <script src="js/info.js"></script>

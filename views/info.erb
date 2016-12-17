@@ -1,0 +1,27 @@
+<html>
+ <head>
+ 	<%= include_gon(:int => true) %>
+ </head>
+  <body>
+    <center>
+    <!-- pre id returns data base info to view -->
+	  <pre id="display"></pre>
+	  <h1>Welcome to this page</h1>
+	  <h3>Please enter your details!!</h3>
+	  <br><br>
+	  <form method="post" action="details">
+	    <h3>Please Enter Your First Name</h3>
+	      <input type="text" name="first_name"  autofocus="autofocus" required>
+	    <h3>Please Enter Your Last Name</h3>
+	      <input type="text" name="last_name" required>
+        <h3>Please Enter Your Email </h3>
+	      <input type="text" name="email" required>
+		  <br><br><br>
+	    <input type="submit">
+      </form>
+     
+    </center>
+   <script src="//cdn.jsdelivr.net/pouchdb/latest/pouchdb.min.js"></script>
+   <script src="js/info.js"></script>
+  </body>
+</html>
