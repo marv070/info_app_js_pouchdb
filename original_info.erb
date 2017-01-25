@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>PouchDB Intro</title>
+	</head>
+	  <body>
+	    <center><h1>INFO DETAILS</h1>
+		  <form id="formUser" >
+		    <p><label for="inputLast">First Name	</label><input type="text" placeholder="First Name"		name="inputFirst" 	id="inputFirst"> </p>
+			<p><label for="inputFirst">Last Name: </label><input type="text" placeholder="Last Name" 	name="inputLast" 	id="inputLast"></p>
+			<p><label for="inputEmail">Email: 	</label><input type="text" placeholder="Email" 	name="inputEmail" 	id="inputEmail">  </p>
+			<input type="button" value="Submit to Database"  id="btnAddNames">
+			<input type="reset"  value="Clear fields">
+			
+		  </form></center>
+		<center>
+          	<h3>Please choose a location.</h3>
+           <form>
+            <select name="choose_location" id= "choose_location" class=""   required>
+            <option value="Select">Select</option> 
+            <option value="Location A">Location A</option>
+            <option value="Location B">Location B</option>
+            <option value="Location C">Location C</option>
+            </select>
+             
+            <input type="button" value="Submit Location"  id="btnUpdateLocations">
+			<input type="reset"  value="Clear fields">
+            <input type="button" value="Show Table Info" id="btnShowNames">
+          </form>
+    	<br><br>
+    		<h3>Please choose a Photo.</h3>
+        <div class="fcmargin fcmargin1 pmmargin">
+            <div id="img_meta_data">Please upload a File
+              <input type="file" id="inputFile" accept="image/*" capture="camera">
+              <input type="text" id="ec" value="look" >
+             <div>&nbsp;</div>
+           </div>
+            <div class="btmargin">
+              <input class="btn btn-primary btnsize" data-toggle="collapse" data-target="#photos" onClick="window.location.href='/'"  value="Upload" type="submit" id="btnUpdatePhoto">
+              <!-- <a href="/" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Upload</a> -->
+              <a href="/" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Back 
+              </a>       
+            </div>
+        </div> 
+    	</center>
+		<!-- Display results -->
+		<center><div id="divResults"></div></center>
+		<center><div id="divResultsLocation"></div></center>
+		<!-- JavaScript libraries -->
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="//cdn.jsdelivr.net/pouchdb/latest/pouchdb.min.js"></script>
+        <script src="js/info.js"></script>
+        
+
+	</body>
+</html>
